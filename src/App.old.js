@@ -7,6 +7,7 @@ import Total from './components/Total';
 
 const App = () => {
   const state = {
+    // removed and put into reducers as initialState
     additionalPrice: 0,
     car: {
       price: 26395,
@@ -23,6 +24,7 @@ const App = () => {
     ]
   };
 
+  // removed and put into actions
   const removeFeature = item => {
     // dispatch an action here to remove an item
   };

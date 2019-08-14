@@ -1,13 +1,14 @@
 import React from 'react';
-
-const Header = props => {
+import {initialState} from '../reducers'
+console.log("TCL: initialState", initialState)
+const Header = () => {
   return (
     <>
       <figure className="image is-128x128">
-        <img src={props.car.image} alt={props.car.name} />
+        <img src={initialState.car.image} alt={initialState.car.name} />
       </figure>
-      <h2>{props.car.name}</h2>
-      <p>Amount: ${props.car.price}</p>
+      <h2>{initialState.car.name}</h2>
+      <p>Amount: ${initialState.car.price}</p>
     </>
   );
 };
