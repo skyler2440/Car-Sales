@@ -1,9 +1,9 @@
 import React from 'react';
-
-const Total = props => {
+import {initialState} from '../reducers'
+const Total = () => {
   return (
     <div className="content">
-      <h4>Total Amount: ${props.car.price + props.additionalPrice}</h4>
+      <h4>Total Amount: ${initialState.car.price + initialState.additionalPrice}</h4>
     </div>
   );
 };

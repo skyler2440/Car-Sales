@@ -7,7 +7,6 @@ import 'bulma/css/bulma.css';
 import './styles.scss';
 import {reducer} from './reducers'
 const store = createStore(reducer)
-console.log("TCL: store", store)
 const rootElement = document.getElementById('root');
 ReactDOM.render(
 <Provider store={store}>

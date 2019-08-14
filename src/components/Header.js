@@ -1,6 +1,5 @@
 import React from 'react';
 import {initialState} from '../reducers'
-console.log("TCL: initialState", initialState)
 const Header = () => {
   return (
     <>

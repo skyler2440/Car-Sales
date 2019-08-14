@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import AddedFeature from './AddedFeature';
-
-const AddedFeatures = props => {
+import AddedFeature from "./AddedFeature";
+import { initialState } from "../reducers";
+const AddedFeatures = () => {
   return (
     <div className="content">
       <h6>Added features:</h6>
-      {props.car.features.length ? (
+      {initialState.car.features.length ? (
         <ol type="1">
-          {props.car.features.map(item => (
+          {initialState.car.features.map(item => (
             <AddedFeature key={item.id} feature={item} />
           ))}
         </ol>
