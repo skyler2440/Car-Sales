@@ -7,7 +7,7 @@ const AdditionalFeature = ({feature, addFeature}) => {
       {/* Add an onClick that will let you add a feature to your car */}
       <button className="button" onClick={() => addFeature(feature)}>Add</button>
       {feature.name} (+{feature.price})
-    </li>
+          </li>
   );
 };
 const mapStateToProps = state => {

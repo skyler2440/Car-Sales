@@ -31,6 +31,11 @@ export const reducer = (state = initialState, action) => {
                     features: [...state.car.features, action.payload.name]
                   }
             }
+            case 'REMOVE_FEATURE':
+                return{
+                    ...state,
+                    additionalPrice: state.additionalPrice - action.payload.price
+                }
         default:
             return state;
     }
