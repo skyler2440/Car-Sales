@@ -1,13 +1,13 @@
 import React from 'react';
-import {initialState} from '../reducers'
-const Header = () => {
+
+const Header = props => {
   return (
     <>
       <figure className="image is-128x128">
-        <img src={initialState.car.image} alt={initialState.car.name} />
+        <img src={props.car.image} alt={props.car.name} />
       </figure>
-      <h2>{initialState.car.name}</h2>
-      <p>Amount: ${initialState.car.price}</p>
+      <h2>{props.car.name}</h2>
+      <p>Amount: ${props.car.price}</p>
     </>
   );
 };
